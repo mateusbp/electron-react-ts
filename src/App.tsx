@@ -1,8 +1,21 @@
 import React from 'react';
 import { render } from 'react-dom';
 
+import Screen from './Screen';
+import GlobalStyle from './styles/global';
+
 const App = () => {
-  return <h1>Hello world!</h1>
+  return (
+    <>
+      <Screen />
+      <GlobalStyle />
+    </>
+  );
 }
 
-render(<App />, document.getElementById('root'));
+render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>,
+  document.getElementById('root'),
+);
