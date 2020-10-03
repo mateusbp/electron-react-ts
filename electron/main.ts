@@ -24,12 +24,12 @@ function createWindow() {
         slashes: true,
       }),
     );
-  };
+  }
 
   mainWindow.on('closed', () => {
-    mainWindow = null
+    mainWindow = null;
   });
-};
+}
 
 app.on('ready', createWindow).whenReady();
 
