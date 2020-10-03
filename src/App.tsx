@@ -4,14 +4,14 @@ import { render } from 'react-dom';
 import Screen from './Screen';
 import GlobalStyle from './styles/global';
 
-const App = () => {
+const App: React.FC = () => {
   return (
     <>
       <Screen />
       <GlobalStyle />
     </>
   );
-}
+};
 
 render(
   <React.StrictMode>
